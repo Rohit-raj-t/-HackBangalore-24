@@ -9,7 +9,7 @@ def execute_query(query):
         cursorclass=pymysql.cursors.DictCursor,
         db="hackbangalore",
         host="hackbangalore-24-rohitrajt2005-754e.l.aivencloud.com",
-        password="AVNS_2DaRXKukpFlFS8aSqUY",
+        password="",
         read_timeout=timeout,
         port=16602,
         user="avnadmin",
