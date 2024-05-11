@@ -1,20 +1,27 @@
-#Project Documentation
-##Project Overview
-This project aims to establish a platform that connects freelancers with potential clients, enhancing visibility and opportunities. The platform uses AI-based matchmaking to match freelancers with projects based on their skills and project requirements. The platform is particularly beneficial for the vast freelance workforce in Bangalore, India’s tech hub.
+# Resolving GitHub Push Protection Error
 
-##Hackathon Track
-The project falls under the Digital Empowerment track. The challenge statement is to establish a platform that connects freelancers with potential clients, enhancing visibility and opportunities. The platform goes beyond setting up a directory website for freelancers and implementing a review and rating system. It adds AI-based matchmaking between freelancers and projects, which is an advanced feature suggested in the Idea Bank.
+When pushing changes to a GitHub repository, you may encounter a push rejection due to repository rule violations. One common violation is related to pushing secrets, such as passwords or API keys, to the repository. This guide outlines the steps to resolve such a violation.
 
-##Tech Stack
-The platform is built using a variety of technologies:
+## Steps to Resolve the Error
 
-Flask: A lightweight web application framework used for setting up the server and API endpoints.
-HTML/CSS: Used for creating the frontend of the web application.
-Python: The main programming language used for developing the application.
-Transformers: A library used for natural language processing tasks, specifically for loading the BERT model.
-BERT: A pre-trained model used for generating embeddings of the CVs and project requirements.
-Scikit-learn: A machine learning library used for calculating the cosine similarity between the BERT embeddings.
-PyMySQL: A library used for connecting to the MySQL database.
-MySQL: The database used for storing the freelancer CVs and project descriptions.
-NumPy/Pandas: Libraries used for data manipulation and analysis.
-This tech stack enables the platform to efficiently and accurately match freelancers with projects, providing a valuable service to both freelancers and clients.
+1. **Identify the Secret**:
+   - Review the error message to identify the location of the secret in the commit history.
+   - Note the file and line number where the secret is detected.
+
+2. **Remove or Update the Secret**:
+   - If the secret is no longer needed, consider removing it from the codebase.
+   - If the secret is still required, use a secure storage solution or environment variables instead of hardcoding the secret in the code.
+   - Update the code to reference the secret from a secure source.
+
+3. **Re-Push the Changes**:
+   - After resolving the issue with the secret, commit the changes to your local repository.
+   - Push the updated commits to the remote repository using the following command:
+     ```bash
+     git push origin <branch_name>
+     ```
+     Replace `<branch_name>` with the name of your branch.
+
+4. **Review Repository Rules**:
+   - Take a moment to review the repository rules, especially those related to secrets and sensitive information.
+   - Ensure that your workflow complies with these rules to prevent similar issues in the future.
+
