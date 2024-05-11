@@ -1,0 +1,4 @@
+<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" media="all">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.min.css') }}" media="all">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}" media="all">
